@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f0f0; /* Couleur de fond de la page */
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* Couleur de fond de la zone de contenu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container div {
+    margin-bottom: 10px;
+}
+
+.container label {
+    display: block;
+}
+
+.container input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.container .buttons {
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les boutons */
+}
+
+.container button {
+    width: 48%; /* Largeur des boutons ajustée */
+    padding: 10px;
+    background-color: #007bff; /* Couleur de fond des boutons */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 20px;
+}

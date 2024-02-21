@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de resistances de polarisation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculateur des valeurs des resistances de polarisation d'un transistor bipolaire. Par Benahmed Nasreddine, Univ. Tlemcen, Algerie. </h2>
+            <p>Entrez les valeurs de Vcc, beta et Icq pour calculer les valeurs des resistances de polarisation.</p>
+        <div>
+            <label for="vcc">Tension d'alimentation (Vcc) :</label>
+            <input type="number" id="vcc" step="0.01" placeholder="Vcc en volts">
+        </div>
+        <div>
+            <label for="beta">Gain en courant beta du transistor :</label>
+            <input type="number" id="beta" step="0.01" placeholder="beta">
+        </div>
+        <div>
+            <label for="icq">Courant de polarisation (Icq) :</label>
+            <input type="number" id="icq" step="0.01" placeholder="Icq en amperes">
+        </div>
+        <div class="buttons">
+            <button onclick="calculateResistances()">Calculer</button>
+        </div>
+        <div class="buttons">
+            <button onclick="resetFields()">Reinitialiser</button>
+        </div>
+        <div id="results"></div>
+    
+      <div>
+            <h3>Schema electrique :</h3>
+            <img src="schema_electrique.png" alt="Schema electrique" width="300">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
